@@ -1,0 +1,78 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid red;
+  width: 8vw;
+}
+header p {
+  font-size: 1rem;
+}
+
+.mainReembolsos {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30rem;
+}
+.containerCards {
+  border: solid blue;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.card {
+  width: 15vw;
+  height: 20vh;
+  border: solid red;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.containerDados {
+  border: red;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 10vh;
+  align-items: center;
+  margin-top: 1rem;
+}
+.containerDados div {
+  background-color: pink;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  height: 5vh;
+}
+.containerDados .imgAnalise {
+  background-color: #e56700;
+  padding: 6px;
+  border-radius: 6px;
+}
+.containerDados .imgAprovados {
+  background-color: #007a6a;
+  padding: 6px;
+  border-radius: 6px;
+}
+.containerDados .imgRejeitados {
+  background-color: #a60b2f;
+  padding: 6px;
+  border-radius: 6px;
+}
+.containerDados .containerSistema {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}/*# sourceMappingURL=Reembolsos.module.css.map */
