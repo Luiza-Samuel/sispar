@@ -7,6 +7,7 @@ import Perfil from "../../assets/Header/image.png";
 import Fechar from "../../assets/Header/imagem-fechar-header.png";
 import styles from "./NavBar.module.scss";
 import { useNavigate } from "react-router-dom";
+import React from "react";
 
 function NavBar() {
   const navigate = useNavigate();
