@@ -1,51 +1,71 @@
-header {
+body {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
   border: solid red;
   width: 8vw;
 }
 header p {
   font-size: 1rem;
+  justify-self: flex-start;
 }
 
 .mainReembolsos {
+  width: 95vw;
   height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-left: 30rem;
+  padding-left: 10rem;
+  border: solid rgb(77, 23, 32);
 }
+.mainReembolsos h1 {
+  font-size: 2rem;
+  font-weight: 650;
+  width: 90vh;
+  height: 30vw;
+  align-content: center;
+  justify-content: flex-end;
+  display: inline;
+}
+
 .containerCards {
-  border: solid blue;
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  border: solid blue;
+  align-items: center;
+  display: flex;
+  flex-direction: end;
+  width: 153.8vh;
+  height: 15.3vw;
+  justify-content: center;
+  width: 62%;
 }
 
 .card {
   width: 15vw;
   height: 20vh;
   border: solid red;
-  border: solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid;
   border-radius: 6px;
   margin-top: 1rem;
 }
 
 .containerDados {
   border: red;
-  width: 60%;
+  width: 70%;
+  height: 10vh;
   display: flex;
   justify-content: space-evenly;
-  height: 10vh;
   align-items: center;
   margin-top: 1rem;
+  border-radius: 6px;
 }
 .containerDados div {
   background-color: pink;
@@ -55,24 +75,42 @@ header p {
   width: 20%;
   height: 5vh;
 }
-.containerDados .imgAnalise {
+
+.containerDados {
+  background-color: #e56700;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.imgSolicitados {
+  background-color: #00bedd;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.imgAnalise {
   background-color: #e56700;
   padding: 6px;
   border-radius: 6px;
 }
-.containerDados .imgAprovados {
+
+.imgAprovados {
   background-color: #007a6a;
   padding: 6px;
   border-radius: 6px;
 }
-.containerDados .imgRejeitados {
+
+.imgRejeitados {
   background-color: #a60b2f;
   padding: 6px;
   border-radius: 6px;
 }
-.containerDados .containerSistema {
-  width: 12%;
+
+.containerSistema {
+  width: 14%;
   display: flex;
-  justify-content: center;
+  background-color: aqua;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 1rem;
 }/*# sourceMappingURL=Reembolsos.module.css.map */

@@ -1,1 +1,147 @@
-/*# sourceMappingURL=Solicitacao.module.css.map */
+.layoutSolicitacao {
+  display: flex;
+}
+
+.containerPrincipalSolicitacao {
+  width: 95vw;
+}
+
+.headerSolicitacao {
+  border: solid red;
+  width: 20vw;
+  display: flex;
+}
+
+.mainSolicitacao {
+  width: 100%;
+}
+
+.formSolicitacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #23282f;
+}
+
+input,
+select,
+textarea {
+  border-radius: 6px;
+  border: solid #cbd4e1 0.8px;
+  height: 4vh;
+  width: 100%;
+}
+
+.grupo1 {
+  width: 35%;
+  height: 25vh;
+  border: solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inputNome {
+  width: 45%;
+}
+
+.inputEmpresa {
+  width: 25%;
+}
+
+.inputPrestacao {
+  width: 25%;
+}
+
+.inputMotivo {
+  width: 100%;
+}
+.inputMotivo textarea {
+  height: 10vh;
+}
+
+.barraVertical {
+  background-color: #cbd4e1;
+  height: 25vh;
+  width: 0.1vw;
+}
+
+.grupo2 {
+  border: solid;
+  width: 60%;
+  height: 25vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.inputData {
+  border: solid green;
+  width: 20%;
+}
+
+.tipoDeDespesas {
+  border: solid blue;
+  width: 30%;
+}
+
+.centroDeCusto {
+  border: solid purple;
+  width: 45%;
+}
+
+.ordem,
+.divisoes,
+.pep,
+.distancia {
+  border: solid red;
+  width: 8%;
+}
+
+.moeda,
+.valorKm,
+.valorFaturado,
+.despesa {
+  border: solid pink;
+  width: 11%;
+}
+
+.botoes {
+  border: solid red;
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.botoes .botaoSalvar {
+  background-color: #001a3d;
+  color: #ffffff;
+  width: 5vw;
+}
+.botoes .botaoDeletar {
+  width: 2vw;
+  background-color: #00bedd;
+}
+
+table {
+  width: 100%;
+  border: solid;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #CBD4E1;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #23282F;
+}
+
+th, td {
+  border: solid;
+  text-align: center;
+}/*# sourceMappingURL=Solicitacao.module.css.map */

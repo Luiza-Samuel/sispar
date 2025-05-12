@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap');
 
-main {
+.mainLogin {
   display: flex;
 }
 
+
 .containerFoto {
-  width: 65%;
+  display: flex;
+  width: 100vw;
   height: 100vh;
-  background-color: green;
-  background-image: url("../../assets/Tela\ Login/imagem tela de login.png"); //caminho a encontra a imagen 
+  background-image: url("../../assets/Tela\ Login/imagem tela de login.png");
   background-repeat: no-repeat;
-  //background-size: contain;
-  //background-size: cover;
   background-size: 100%;
   background-position: center;
 }
 
 .formWapper {
-  //border: solid blue;
-  width: 37%;
+  border: solid blue;
+  width: 40%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,25 +28,25 @@ main {
 
   //Aqui que tenho que mudar para colocar do lado da imagem
   .boxLogo {
-    width: 368px;
-    height: 28.9vh; // organizei o quadro do login 
+    width: 366px;
+    height: 25vw; // organizei o quadro do login 
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
-    //border: solid pink;
+    border: solid pink;
     justify-content: space-evenly;
 
-
-
     h1 {
-      //border: solid violet;
-      height: 30vh;
-      //width: 18;
-      font-size: 2rem;
+      border: solid rgb(90, 16, 90);
+      height: 78px;
+      width: 303px;
       font-weight: 700;
-      //line-height: 6.46vh;
+      line-height: 100%;
+      font-size: 2rem;
       text-align: center;
+      font-family: "inter";
       font-family: "Inter", sans-serif;
       color: #23282F;
 
@@ -56,44 +55,55 @@ main {
     // A LETRA AZUL EM BAIXO DA LOG
     p {
       color: #0844C4;
-      width: 62vh;
-      height: 3vw;
+      width: 368px;
+      height: 3.1vh;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      font-weight:600;
       font-size: 1rem;
       font-family: "Inter";
       text-align: center;
-      line-height: 19px;
-      //border: solid yellowgreen
+      line-height: 100%;
+      border: solid yellowgreen
     }
   }
 
   form {
-    //border: solid red;
-    margin-top: 1.5rem;
-    height: 40vh;
-    width: 75%;
+    border: solid red;
+    //margin-top: 1.5rem;
+    width: 368px;
+      //height:9vh ;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     // mexendo na borda do login (email e senha)
 
     input {
       margin-bottom: 0.5rem;
-      height: 8vh;
-      border-radius: 6px; // Esse comando dexa as abas arrendondada 
-      padding: 16px;
-      width: 100%;
+      height:153px;
+      width: vw;
+      border-radius: 6px; // Esse comando deixa as abas arrendondada 
+      padding: 18px;
+     // width: 15vw;
       border: 1.5px solid #CBD4E1; // Aqui coloquei a espessura da borda de login
 
     }
 
     imput:hover {
-      border: 0.9px solid#001A3D;
+      font-size: 0.5rem;
+      border: 0.8px solid#001A3D;
+      width: 368px;
+     
     }
 
     imput:focus {
       border: 0.5px solid#001A3D;
+      width: 368px;
+      height:9vh ;
       box-shadow: 1.5rem 0rem 05rem 0.6rem #CBD4E1; // esse comando faz com que minha borda quando for selecionada seja intensificada com o toque
 
     }
@@ -112,7 +122,7 @@ main {
     }
 
     div {
-      //border: solid red;
+      border: solid rgba(255, 0, 0, 0.466);
       display: flex;
       flex-direction: row;
       justify-content: center;

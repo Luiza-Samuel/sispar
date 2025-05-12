@@ -9,12 +9,12 @@ import NumeroSolicitados from "../../assets/Dashboard/N-Solicitados.png";
 import Sistema from "../../assets/Dashboard/Sistema-atualizado.png";
 import SolicitarHistorico from "../../assets/Dashboard/Solicitar - Histórico.png";
 import SolicitarReembolso from "../../assets/Dashboard/Solicitar - Reembolso.png";
-//importando a NavBar no Reembolsos
 import NavBar from "../navbar/NavBar.jsx"
 
 function Rembolsos() {
   return (
-    <div>
+    <div className={styles.body}>
+
       <NavBar />
 
       <header>
@@ -23,62 +23,62 @@ function Rembolsos() {
         <p>Reembolsos</p>
       </header>
 
-      <main className={styles.mainRembolsos}>
+      <main className={styles.mainReembolsos}>
         <h1>Sistema de Reembolsos</h1>
         <p>
           Solicite novos pedidos de reembolso, visualize solicitações em análise
           e todo o histórico.
         </p>
 
-        
-        <section className={styles.containerCards}>
-            
+        <div>
+          <section className={styles.containerCards}>
+
             <article className={styles.card}>
               <img src={SolicitarReembolso} alt="" />
               <p>Solicitar Reembolso</p>
             </article>
-  
+
             <article className={styles.card}>
               <img src={Analises} alt="" />
               <p>Verificar análises</p>
             </article>
-  
+
             <article className={styles.card}>
               <img src={SolicitarHistorico} alt="" />
               <p>Histórico</p>
             </article>
           </section>
-
+        </div>
         <section className={styles.containerDados}>
 
           <div>
-            <img nomedaclass={NumeroSolicitados} 
-            fonte={NumeroSolicitados} alt=""/>
+            <img nomedaclass={NumeroSolicitados}
+              fonte={NumeroSolicitados} alt="" />
             <h4>182</h4>
             <p>Solicitados</p>
           </div>
 
           <div>
-            <img nomedaclass={NumeroAnalises} fonte={NumeroAnalises}alt=""></img>
+            <img className={styles.imgAnalises} src={NumeroAnalises} alt=""></img>
             <h4>74</h4>
             <p>Em análise</p>
           </div>
           <div>
-            <img nomedaclass={NumeroAprovados} fonte ={NumeroAprovados}alt=""></img>
+            <img nomedaclass={NumeroAprovados} src={NumeroAprovados} alt=""></img>
             <h4>195</h4>
             <p>Aprovados</p>
           </div>
           <div>
-            <img nomedaclass={umeroRejeitados} fonte={NumeroRejeitados} alt=""></img>
+            <img nomedaclass={NumeroRejeitados} src={NumeroRejeitados} alt=""></img>
             <h4>41</h4>
             <p>Rejeitados</p>
           </div>
-          </section>
+        </section>
 
-          <section className={styles.containnerSistema}>
-            <img src={Sistema} alt=""/>
-            <a href="">Sistema Atualizado.</a>
-          </section>
+        <section className={styles.containnerSistema}>
+          <img src={Sistema} alt="" />
+          <a href="">Sistema atualizado.</a>
+        </section>
       </main>
     </div>
   );

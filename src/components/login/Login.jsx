@@ -7,12 +7,12 @@ function Login() {
 
   const navigate = useNavigate() //Iniciando o hook useNavigate
 
-  const irParaReembolsos = () => {
-    navigate("/reembolsos")  //Redirecionando para a página de reembolsos
+
+  const irParaReembolsos = () => { navigate("/reembolsos")  //Redirecionando para a página de reembolsos
   }
 
   return (
-    <main>
+    <main className={styles.mainLogin}>
       <section className={styles.containerFoto}>
         {/* <img src={Capa} alt="Foto de um navio cargueiro" /> */}
       </section>
@@ -27,11 +27,11 @@ function Login() {
         <form action="">
           <input type="email" name="email" id="email" placeholder="Email" />
 
-          <input type="password" name="senha" id="Senha" placeholder="Senha" />
+          <input type="password" name="password" id="password" placeholder="Senha" />
 
           <a href="">Esqueci minha senha</a>
           
-          <div>
+          <div className={styles.boxButton}>
            <button onClick={irParaReembolsos} className={styles.buttonEntrar}>Entrar</button>
             <button className={styles.buttonCriar}>Criar conta</button>
           </div>
