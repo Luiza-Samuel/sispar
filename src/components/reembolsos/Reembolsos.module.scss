@@ -9,27 +9,31 @@ header {
     justify-content: space-around;
     align-items: center;
     //border: solid red;
-    height: 5vh;
+    height: 10vh;
     width: 8vw;
 
     p {
         font-size: 1rem;
-      
+        width: 374px;
+        height: 2.8vw;
+
     }
 }
 
 .mainReembolsos {
-    width: 95vw;
+    width: 104vw;
     height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10rem;
-   //border: solid rgb(77, 23, 32);
+    border: solid rgb(77, 23, 32);
+    
 
     h1 {
         font-size: 2rem;
         font-weight: 700;
+        
 
     }
 
@@ -37,28 +41,34 @@ header {
 
 .containerCards {
     display: flex;
-       width: 70%;
+    width: 70%;
     justify-content: center;
-   
+
 }
 
 
 .card {
-    width: 15vw;
-    height: 20vh;
-    border: solid white;
+    width: 35vw;
+    height: 30vh; // Aqui eu controlo a altura 
+    //border: solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    left: 32px;
+    border-radius: 6px;
+    padding: 18px;
+   border: 0.8px solid #CBD4E1;
 }
 
 .card:hover {
-   background-color: #f1f4f9;
+    background-color: #f1f4f9;
     border: solid;
     cursor: pointer;
+     
+
 
 
 }
@@ -72,66 +82,81 @@ header {
     align-items: center;
     margin-top: 1rem;
     border-radius: 6px;
+    
+
+
 
     div {
-      background-color: pink;
+       background-color: #FFFFFF;
         align-items: center;
         display: flex;
         justify-content: space-evenly;
         width: 20%;
         height: 5vh;
+        margin-top: 1rem;
+        
     }
 }
 
 
 
 
-.containerDados {
-  background-color: #e56700;
+.containerDados { 
+    background-color: #FFFFFF;
     padding: 8px;
-    border-radius: 10px;
-    width: 70%;
-    height: 10vh;
+    //border-radius: 10px;
+    width: 68.7vw;
+    height: 17vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+     margin-bottom: 0.2rem;
     border-radius: 6px;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    border: 0.8px solid #CBD4E1; // Aqui eu mexo com as bordas das opções acima do sistema atualizado 
+    
 
-    div {
+
+    div {    // Mexe com as bordas dos botões abaixo 
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 20%;
         height: 5vh;
-        //border: solid ;
-    }
+        margin-bottom: 2rem;
+        border-radius: 6px;
+        padding: 18px;
+        left: 64px;
+        bottom: 2rem;
+  
+}
+
 }
 
 
 //colocar os card da imagens do botão
 
 .imgSolicitados {
-    //background-color: #00bedd;
+    background-color: #00bedd;
     padding: 6px;
     border-radius: 6px;
 }
 
 .imgAnalise {
-   // background-color: #e56700;
+    background-color: #e56700;
     padding: 6px;
     border-radius: 6px;
 
 }
 
 .imgAprovados {
-  //  background-color: #007a6a;
+      background-color: #007a6a;
     padding: 6px;
     border-radius: 6px;
 }
 
 .imgRejeitados {
-    //background-color: #a60b2f;
+    background-color: #a60b2f;
     padding: 6px;
     border-radius: 6px;
 }
