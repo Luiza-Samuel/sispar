@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import styles from "./Reembolsos.module.scss";
 import Home from "../../assets/Dashboard/home header.png";
 import Seta from "../../assets/Dashboard/Vector.png";
@@ -11,7 +12,9 @@ import SolicitarHistorico from "../../assets/Dashboard/Solicitar - Histórico.pn
 import SolicitarReembolso from "../../assets/Dashboard/Solicitar - Reembolso.png";
 import NavBar from "../navbar/NavBar.jsx"
 
+
 function Rembolsos() {
+ const navigate = useNavigate()
   return (
     <div className={styles.body}>
 
@@ -34,6 +37,8 @@ function Rembolsos() {
           <section className={styles.containerCards}>
 
             <article className={styles.card}>
+              <article className={styles.card} on onClick={() => { navigate("/solicitacao") }} />
+
               <img src={SolicitarReembolso} alt="" />
               <p>Solicitar Reembolso</p>
             </article>
@@ -52,22 +57,25 @@ function Rembolsos() {
         <section className={styles.containerDados}>
 
           <div>
-            <img nomedaclass={NumeroSolicitados}
+            <img nomedaclass={styles.imgSolicitados}
               fonte={NumeroSolicitados} alt="" />
             <h4>182</h4>
             <p>Solicitados</p>
           </div>
 
           <div>
-            <img className={styles.imgAnalises} src={NumeroAnalises} alt=""></img>
+            <img className={styles.imgAnalises} 
+            src={NumeroAnalises} alt="" />
             <h4>74</h4>
             <p>Em análise</p>
           </div>
+
           <div>
-            <img nomedaclass={NumeroAprovados} src={NumeroAprovados} alt=""></img>
+            <img className={NumeroAprovados} src={NumeroAprovados} alt=""></img>
             <h4>195</h4>
             <p>Aprovados</p>
           </div>
+
           <div>
             <img nomedaclass={NumeroRejeitados} src={NumeroRejeitados} alt=""></img>
             <h4>41</h4>

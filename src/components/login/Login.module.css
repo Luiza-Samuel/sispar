@@ -5,9 +5,8 @@
 
 .containerFoto {
   display: flex;
-  width: 86vw;
-  height: 100vh;
-  justify-content: center;
+  width: 100vw;
+  height: 130vh;
   background-image: url("../../assets/Tela Login/imagem tela de login.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -15,9 +14,8 @@
 }
 
 .formWapper {
-  border: solid blue;
-  width: 40%;
-  height: 100vh;
+  width: 50%;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,12 +28,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FFFFFF;
-  border: solid pink;
   justify-content: space-evenly;
 }
 .formWapper .boxLogo h1 {
-  border: solid rgb(90, 16, 90);
   height: 78px;
   width: 303px;
   font-weight: 700;
@@ -58,10 +53,9 @@
   font-family: "Inter";
   text-align: center;
   line-height: 100%;
-  border: solid yellowgreen;
 }
 .formWapper form {
-  border: solid red;
+  margin-top: 1.5rem;
   width: 368px;
   height: 20vh;
   display: flex;
@@ -100,7 +94,6 @@
   justify-content: center;
 }
 .formWapper form div {
-  border: solid rgba(255, 0, 0, 0.466);
   display: flex;
   flex-direction: row;
   justify-content: center;
