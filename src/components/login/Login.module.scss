@@ -7,22 +7,24 @@
 
 .containerFoto {
   display: flex;
-  width: 100vw;
-  height: 130vh;
+  width:130vh;
+  height: 79vw;
   background-image: url("../../assets/Tela\ Login/imagem tela de login.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  //background: size 100%;
   background-position: center;
+ 
 }
 
 .formWapper {
-  //border: solid blue;
-  width: 50%;
-  height: 130vh;
+  border: solid blue;
+  width: 130vh;
+  height: 79vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
 
 
 

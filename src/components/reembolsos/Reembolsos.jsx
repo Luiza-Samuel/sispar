@@ -12,13 +12,13 @@ import SolicitarHistorico from "../../assets/Dashboard/Solicitar - Histórico.pn
 import SolicitarReembolso from "../../assets/Dashboard/Solicitar - Reembolso.png";
 import NavBar from "../navbar/NavBar.jsx"
 
-
 function Rembolsos() {
- const navigate = useNavigate()
+  const navigate = useNavigate()
+
   return (
     <div className={styles.body}>
 
-      <NavBar />
+<NavBar />
 
       <header>
         <img src={Home} alt="Casinha da header" />
@@ -33,57 +33,60 @@ function Rembolsos() {
           e todo o histórico.
         </p>
 
-        <div>
-          <section className={styles.containerCards}>
+        <section className={styles.containerCards}>
+          <article className={styles.card}  onClick={()=>{navigate("/solicitacao")}} > 
 
-            <article className={styles.card}>
-              <article className={styles.card} on onClick={() => { navigate("/solicitacao") }} />
+            <img src={SolicitarReembolso} alt="" />
+            <p>Solicitar Reembolso</p>
+          </article>
 
-              <img src={SolicitarReembolso} alt="" />
-              <p>Solicitar Reembolso</p>
-            </article>
+          <article className={styles.card}>
+            <img src={Analises} alt="" />
+            <p>Verificar análises</p>
+          </article>
 
-            <article className={styles.card}>
-              <img src={Analises} alt="" />
-              <p>Verificar análises</p>
-            </article>
+          <article className={styles.card}>
+            <img src={SolicitarHistorico} alt="" />
+            <p>Histórico</p>
+          </article>
+        </section>
 
-            <article className={styles.card}>
-              <img src={SolicitarHistorico} alt="" />
-              <p>Histórico</p>
-            </article>
-          </section>
-        </div>
         <section className={styles.containerDados}>
-
           <div>
-            <img nomedaclass={styles.imgSolicitados}
-              fonte={NumeroSolicitados} alt="" />
+            <img
+              className={styles.imgSolicitados}
+              src={NumeroSolicitados}
+              alt=""
+            />
             <h4>182</h4>
             <p>Solicitados</p>
           </div>
 
           <div>
-            <img className={styles.imgAnalises} 
+            <img className={styles.imgAnalise} 
             src={NumeroAnalises} alt="" />
             <h4>74</h4>
             <p>Em análise</p>
           </div>
 
           <div>
-            <img className={NumeroAprovados} src={NumeroAprovados} alt=""></img>
+            <img className={styles.imgAprovados} src={NumeroAprovados} alt="" />
             <h4>195</h4>
             <p>Aprovados</p>
           </div>
 
           <div>
-            <img nomedaclass={NumeroRejeitados} src={NumeroRejeitados} alt=""></img>
+            <img
+              className={styles.imgRejeitados}
+              src={NumeroRejeitados}
+              alt=""
+            />
             <h4>41</h4>
             <p>Rejeitados</p>
           </div>
         </section>
 
-        <section className={styles.containnerSistema}>
+        <section className={styles.containerSistema}>
           <img src={Sistema} alt="" />
           <a href="">Sistema atualizado.</a>
         </section>
