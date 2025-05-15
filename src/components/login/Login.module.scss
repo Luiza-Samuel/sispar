@@ -2,51 +2,51 @@
 
 .mainLogin {
   display: flex;
+
 }
 
 
 .containerFoto {
   display: flex;
-  width:130vh;
-  height: 79vw;
+  width: 70vw;
+  height: 100vh;
+  background-color: green;
   background-image: url("../../assets/Tela\ Login/imagem tela de login.png");
   background-repeat: no-repeat;
-  //background: size 100%;
+  background: size 100%;
   background-position: center;
- 
+
 }
 
 .formWapper {
   border: solid blue;
-  width: 130vh;
-  height: 79vw;
+  width: 406px;
+  height: 1,180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
 
-
-
   //Aqui que tenho que mudar para colocar do lado da imagem
+
   .boxLogo {
-    width: 366px;
-    height: 25vw; // organizei o quadro do login 
-    font-size: 2rem;
+   // width: 370px;
+    height: 20vw; // organizei o quadro do login 
+    font-size: 1rem;
+    gap: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    //background-color: #FFFFFF;
-    //border: solid pink;
     justify-content: space-evenly;
 
     h1 {
-      //border: solid rgb(90, 16, 90);
-      height: 78px;
-      width: 303px;
+      border: solid rgb(90, 16, 90);
+      height: 100px;
+      width: 67%;
       font-weight: 700;
       line-height: 100%;
-      font-size: 2rem;
+       font-size: 2rem;
       text-align: center;
       font-family: "inter";
       font-family: "Inter", sans-serif;
@@ -58,25 +58,24 @@
     p {
       color: #0844C4;
       width: 368px;
-      height: 3.1vh;
+      height: 3vh;
       flex-direction: row-reverse;
       justify-content: flex-end;
       align-items: center;
-      font-weight:600;
+      font-weight: 600;
       font-size: 1rem;
       font-family: "Inter";
       text-align: center;
-      line-height: 100%;
-      //border: solid yellowgreen
+      line-height: 90%;
+      border: solid yellowgreen
     }
   }
 
   form {
-    //border: solid red;
+    border: solid red;
     margin-top: 1.5rem;
-    width: 368px;
-      //height:9vh ;
-    height: 20vh;
+    width: 370px;
+    height: 257px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,75 +84,82 @@
     // mexendo na borda do login (email e senha)
 
     input {
-      margin-bottom: 0.5rem;
-      height:153px;
-      width: vw;
+      margin-bottom:0.5rem;
+      height: 110px;
       border-radius: 6px; // Esse comando deixa as abas arrendondada 
       padding: 18px;
-     // width: 15vw;
+      width: 24vw;
       border: 1.5px solid #CBD4E1; // Aqui coloquei a espessura da borda de login
 
-    }
-
-    imput:hover {
-      font-size: 0.5rem;
-      border: 0.8px solid#001A3D;
-      width: 368px;
-     
-    }
-
-    imput:focus {
-      border: 0.5px solid#001A3D;
-      width: 368px;
-      height:9vh ;
-      box-shadow: 1.5rem 0rem 05rem 0.6rem #CBD4E1; // esse comando faz com que minha borda quando for selecionada seja intensificada com o toque
 
     }
+  }
 
-    // linha de comando do esqueci senha 
-    a {
-      font-weight: 400;
-      color: #23282F;
-      font-size: 1rem;
-      height: 2vw;
-      width: 26vh;
-      line-height: 19.36px;
-      text-decoration: none;
-      font-family: "Inter";
-      justify-content: center;
-    }
+  imput:hover {
+    font-size: 0.5rem;
+    border: 0.8px solid#001A3D;
+    width: 368px;
 
-    div {
-      //border: solid rgba(255, 0, 0, 0.466);
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      margin-top: 10px;
+  }
 
-    }
+  imput:focus {
+    border: 0.5px solid#001A3D;
+    width: 368px;
+    height: 9vh;
+    box-shadow: 1.5rem 0rem 05rem 0.6rem #CBD4E1; // esse comando faz com que minha borda quando for selecionada seja intensificada com o toque
 
-    .buttonEntrar {
-      font-size: 1rem;
-      font-weight: 700;
-      height: 9vh;
-      width: 6.6vw;
-      margin: 4px;
-      background-color: #001A3D;
-      font-family: "Inter", sans-serif;
-      font-size: 1rem;
-      color: #FFF;
-      border: none;
-      border-radius: 6px;
+  }
 
-    }
+  // linha de comando do esqueci senha 
+  a {
+    font-weight: 400;
+    color: #23282F;
+    font-size: 1rem;
+    height: 2vw;
+    width: 26vh;
+    line-height: 19.36px;
+    text-decoration: none;
+    font-family: "Inter";
+    justify-content: center;
+  }
 
-    imput:hover {
-      border: 0.9px solid#00BEDD;
-      border-bottom: 6px solid #00BEDD;
+  div {
+    //border: solid rgba(255, 0, 0, 0.466);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+
+  }
+
+  .buttonEntrar {
+    font-size: 1rem;
+    font-weight: 700;
+    height: 9vh;
+    width: 6.6vw;
+    margin: 4px;
+    background-color: #001A3D;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+
+  }
+
+  imput:hover {
+    border: 0.9px solid#00BEDD;
+    border-bottom: 6px solid #00BEDD;
 
 
-    }
+  }
+
+  .boxButton {
+    width: 100%;
+    //border: solid green;
+    display: flex;
+    justify-content: space-evenly;
 
     .buttonCriar {
       width: 6.6vw;
