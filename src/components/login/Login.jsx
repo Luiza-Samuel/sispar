@@ -7,7 +7,7 @@ function Login() {
 
   const navigate = useNavigate() //Iniciando o hook useNavigate
 
-
+//Função para quando eu clicar no otoao de entrar , me levar para tele de reembolsos 
   const irParaReembolsos = () => { navigate("/reembolsos")  //Redirecionando para a página de reembolsos
   }
 
@@ -34,6 +34,7 @@ function Login() {
           <div className={styles.boxButton}>
            <button onClick={irParaReembolsos} className={styles.buttonEntrar}>Entrar</button>
             <button className={styles.buttonCriar}>Criar conta</button>
+            
           </div>
 
         </form>

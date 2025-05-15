@@ -16,6 +16,7 @@ function Rembolsos() {
   const navigate = useNavigate()
 
   return (
+    
     <div className={styles.body}>
 
 <NavBar />

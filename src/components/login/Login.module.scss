@@ -2,8 +2,9 @@
 
 .mainLogin {
   display: flex;
-
+  
 }
+
 
 .containerFoto {
   display: flex;
@@ -16,6 +17,7 @@
   background-position: center;
 
 }
+
 
 .formWapper {
   border: solid blue;
@@ -86,7 +88,7 @@
     // mexendo na borda do login (email e senha)
     input {
       margin-bottom:0.5rem;
-      height: 110px;
+      height: 56px;
       border-radius: 6px; // Esse comando deixa as abas arrendondada 
       padding: 18px;
       width: 24vw;
