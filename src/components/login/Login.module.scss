@@ -5,12 +5,11 @@
 
 }
 
-
 .containerFoto {
   display: flex;
   width: 70vw;
   height: 100vh;
-  background-color: green;
+  //background-color: green;
   background-image: url("../../assets/Tela\ Login/imagem tela de login.png");
   background-repeat: no-repeat;
   background: size 100%;
@@ -28,10 +27,10 @@
   align-items: center;
   background-color: #FFFFFF;
 
+
   //Aqui que tenho que mudar para colocar do lado da imagem
 
   .boxLogo {
-   // width: 370px;
     height: 20vw; // organizei o quadro do login 
     font-size: 1rem;
     gap: 32px;
@@ -40,8 +39,9 @@
     align-items: center;
     justify-content: space-evenly;
 
+
     h1 {
-      border: solid rgb(90, 16, 90);
+      //border: solid rgb(90, 16, 90);
       height: 100px;
       width: 67%;
       font-weight: 700;
@@ -67,12 +67,13 @@
       font-family: "Inter";
       text-align: center;
       line-height: 90%;
-      border: solid yellowgreen
+      //border: solid yellowgreen
     }
   }
 
+
   form {
-    border: solid red;
+    //border: solid red;
     margin-top: 1.5rem;
     width: 370px;
     height: 257px;
@@ -81,8 +82,8 @@
     justify-content: space-between;
     align-items: center;
 
-    // mexendo na borda do login (email e senha)
 
+    // mexendo na borda do login (email e senha)
     input {
       margin-bottom:0.5rem;
       height: 110px;
@@ -111,6 +112,7 @@
   }
 
   // linha de comando do esqueci senha 
+
   a {
     font-weight: 400;
     color: #23282F;
@@ -160,6 +162,7 @@
     //border: solid green;
     display: flex;
     justify-content: space-evenly;
+    
 
     .buttonCriar {
       width: 6.6vw;
